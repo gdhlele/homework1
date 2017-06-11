@@ -1,0 +1,9 @@
+mysql:
+  image: mysql:5.7
+  environment:
+    - MYSQL_ROOT_PASSWORD = password
+    - MYSQL_DATABASE = hw1sql
+  ports:
+    - "3306:3306"
+  volumes:
+    - /var/lib/mysql
